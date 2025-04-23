@@ -1,0 +1,29 @@
+mkdir curso-git-embarcatech
+
+cd curso-git-embarcatech
+
+git init
+
+git config --local user.name "Thayna"
+
+git config --local user.email "thayryu@gmail.com"
+
+echo "Thayná dos Santos Bittencourt - (20251ZL00130024)" > ArquivoI.txt
+
+git add ArquivoI.txt
+
+git commit -m "Adicionando arquivo I com nome e matrícula"
+
+git remote add origin https://github.com/BittencourtSt/curso-git-embarcatech.git
+
+git branch -M main
+
+git push -u origin main
+
+touch ArquivoII.txt
+
+git add ArquivoII.txt
+
+git commit -m "Adicionando arquivo II com a lista de comandos utilizados"
+
+git push origin main
